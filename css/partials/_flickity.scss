@@ -1,0 +1,17 @@
+
+.flickity-page-dots {
+	display: none;
+}
+
+button.flickity-prev-next-button .arrow {
+	fill: rgba(255,255,255, .6)
+}
+
+button.flickity-prev-next-button {
+	background: transparent;
+	transition: all .3s ease;
+}
+
+button.flickity-prev-next-button:hover {
+	background: rgba(255,255,255, .3);
+}

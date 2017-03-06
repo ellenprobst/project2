@@ -1,0 +1,43 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/main";
+@import "partials/flickity";
+@import "partials/footer";
+@import "partials/dropDownMenu";
+@import "partials/buttons";
+@import "partials/navigation";
+@import "partials/header";
+
+
+body {
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+	color: $black;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.red {
+	color: $accentColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	max-width: $wrapperWidth;
+	margin: 0 auto;
+	padding: 50px 10px;
+	@include bp(mobile) {
+		padding: 25px;
+	}
+}
+

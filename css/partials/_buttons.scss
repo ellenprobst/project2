@@ -1,0 +1,57 @@
+.button {
+	display: block;
+	width: 115px;
+	border: 1px solid white;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: white;
+	padding: 6px;
+	letter-spacing: 1.5px;
+	margin: 0 auto;
+}
+
+.button--black {
+	color: $black;
+	border: 1px solid rgba(77,77,77, .5);
+	margin: 20px auto;
+}
+
+// animated button
+
+.button--animate {
+	position: relative;
+	z-index: 1;
+	transition: all .5s ease;
+}
+ .button--animate:after {
+ 		content: '';
+  		width: 0%;
+ 	    top: 0;
+ 	    left: 0;
+ 	    background-color: #fff;
+ 		position: absolute;
+ 		transition: all .5s ease-out;
+ 		opacity: 0;
+}
+.button--animate:hover {
+		color: $black;
+	}
+.button--animate:hover::after {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+//  fade-in button
+
+.button--fade-in {
+	transition: all .6s ease;
+}
+
+.button--fade-in:hover {
+	background-color: rgba(222,60,47, .4);
+}

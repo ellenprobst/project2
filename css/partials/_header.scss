@@ -1,0 +1,35 @@
+header {
+
+	height: 75vh;
+	background-image: linear-gradient( rgba(220,220,235, 0.3), rgba(220,220,235, 0.3)), url(../assets/header-big-copy.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.headingContainer {
+	width: 630px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+
+	p {
+		font-size: 1.3rem;
+		font-weight: lighter;
+		margin: 0px;
+	}
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 3.2rem;
+	text-transform: uppercase;
+	line-height: 1;
+	margin: 15px 0;
+	@include bp(mobile) {
+		font-size: 2.5rem;
+	}
+}
